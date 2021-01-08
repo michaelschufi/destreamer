@@ -207,7 +207,7 @@ async function downloadVideo(videoUrls: string[], outputDirectories: string[], s
             await drawThumbnail(video.posterImage, session);
         }
 
-        const outputPath = outputDirectories[j] + path.sep + video.title + '.' + argv.format;
+        const outputPath = outputDirectories[j] + path.sep + video.title + '_' + videoGuids[i] + '.' + argv.format;
         const ffmpegInpt = new FFmpegInput(video.playbackUrl, new Map([
             ['headers', headers]
         ]));

@@ -4,7 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "node",
+            "runtimeArgs": [
+                "--experimental-modules"
+            ],
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "name": "Launch current file",
+            "program": "${file}",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
         {
             "type": "node",
             "runtimeArgs": ["--max-http-header-size", "32768"],
