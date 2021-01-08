@@ -4,7 +4,7 @@ Just a fork of [snobu/destreamer](https://github.com/snobu/destreamer) with a sc
 ### Usage
 First add a textfile with video URLs in it:
 
-video.txt
+Call it e.g. `videos.txt`
 ```txt
 https://web.microsoftstream.com/video/xxxxxxxx-aaaa-xxxx-xxxx-xxxxxxxxxxxx
 https://web.microsoftstream.com/video/xxxxxxxx-bbbb-xxxx-xxxx-xxxxxxxxxxxx
